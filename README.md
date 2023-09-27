@@ -1,66 +1,20 @@
-## Foundry
+## DVote Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**Smart Contract Name**: DVote
+**Version**: 0.8.18
+**License**: MIT License
+**Author**: Victor Mwania
 
-Foundry consists of:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## OverView 
 
-## Documentation
+The DVote Smart Contract is designed for conducting elections with proposals that can be voted on. This contract allows users to add candidates, vote for proposals, calculate the winning proposal, and retrieve election details. It includes a set of functions for managing the election process.
 
-https://book.getfoundry.sh/
 
-## Usage
+## Smart Contract Structure
 
-### Build
+**DVote.sol** -  The main smart contract that defines the election and its functions.
+**DeployDVote.s.sol** - The deploy contract 
+**DVoteTest.t.sol** - The test contract for testing the functionality of the DVote contract
 
-```shell
-$ forge build
-```
 
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
