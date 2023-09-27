@@ -4,8 +4,8 @@ pragma solidity 0.8.19;
 
 import {Test, console} from "forge-std/Test.sol";
 import {StdCheats} from "forge-std/StdCheats.sol";
-import {DeployDVote} from "../../script/DeployDVote.s.sol";
-import {DVote} from "../../src/DVote.sol";
+import {DeployDVote} from "../script/DeployDVote.s.sol";
+import {DVote} from "../src/DVote.sol";
 
 contract DVoteTest is StdCheats, Test {
     struct Proposal {
